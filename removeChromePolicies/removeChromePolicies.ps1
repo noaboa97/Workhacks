@@ -1,4 +1,4 @@
-﻿$val = Get-ItemProperty -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google -Name * -ErrorAction Ignore
+$val = Get-Item -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome -ErrorAction Ignore
 if ($val -ne $null){
 
-Remove-ItemProperty -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\ -Name *}
+Remove-Item -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome -Recurse}
