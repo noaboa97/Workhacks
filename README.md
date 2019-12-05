@@ -12,7 +12,7 @@ Can also be used to start or stop other services
 
 
 ### removeChromePolicies
-Removes all Chrome Policies set by my company's GPO.
+Removes all Chrome Policies except for the UpdateCheckin set by the company's GPO.
 
 Set the path to the PS Script in the batch file.
 Put the batch file in autostart folder to start the PS Script on every startup or create a schedule task.
