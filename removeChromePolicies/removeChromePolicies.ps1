@@ -1,4 +1,4 @@
-﻿$Logfile = "C:\Temp\PS Scripts\Logs\removeChromePolicies.log"
+﻿$Logfile = "Path"
 $val = Get-Item -Path Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome -ErrorAction Ignore
 if ($val -ne $null){
 
